@@ -1,8 +1,15 @@
 ## Installation
-1. Create and establish your Python virtualenv environment on the CMD line
+1. Run these commands in your terminal. These will install the modules needed to run this application, in case you don't have them:
 ```bash
-python3 -m venv venv;
-source ./venv/bin/activate;
+sudo apt install python3 python3-tk build-essential git -y
+```
+
+It's generally a good practice to update your kernel environment using the `update` and `upgrade` command from time to time. Run these for now:
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt full-upgrade -y
+sudo apt autoremove
 ```
 
 2. Then, install the dependencies
@@ -10,8 +17,7 @@ source ./venv/bin/activate;
 pip install -r requirements.txt
 ```
 
-3. Finally, run the project
-For backend development & debugging:
+3. Finally, run the project for backend development & debugging:
 ```bash
-python app.py
+python main.py
 ```

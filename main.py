@@ -6,6 +6,7 @@ import logging as log
 
 from src.routes import init_app
 from src.config import Config
+from src.gui import launch_gui
 
 # Configuring logs for App
 handler = log.FileHandler('adlog.log', encoding='utf-8')
@@ -24,4 +25,5 @@ CORS(app, resources = {r"/*": {"origins": Config.CORS_ORIGINS }})
 
 if __name__ == "__main__":
     init_app(app, logger)
+    launch_gui()
     app.run(debug=True)

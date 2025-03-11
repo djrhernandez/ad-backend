@@ -1,6 +1,6 @@
 # routes.py
 from flask import jsonify, request
-from gui import calculate
+from .gui import calculate
 
 def init_app(app, logger):
     @app.before_request

@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 
 def calculate(expression):
     try:
@@ -38,5 +37,5 @@ def launch_gui():
 
     root.mainloop()
 
-if __name__ == "__main__":
-    launch_gui()
+# if __name__ == "__main__":
+#     launch_gui()
